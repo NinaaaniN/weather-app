@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/styling.css" />
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <form>
+        <input
+          type="text"
+          placeholder="Enter a city..."
+          required
+          class="search-input"
+        />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+      <hr />
+      <div class="current-weather">
+        <div class="weather-info">
+          <h1 id="city-name">Tzaneen</h1>
+          <div class="weather-stats">
+            <span id="day-time">Saturday 15:32</span>, moderate rain
+            <br />
+            Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+          </div>
+        </div>
+        <div class="temperature">
+          <span class="icon">☀️</span>
+          <span class="temp" id="city-temperature">14</span>
+          <span class="degree-unit">°C</span>
+        </div>
+      </div>
+      <hr />
+      <footer>
+        This project was coded by
+        <a
+          href="https://www.shecodes.io/graduates/134446-nina-nkhwashu"
+          target="_blank"
+          >Nina Nkhwashu</a
+        >
+        and is <a href="https://github.com/" target="_blank">on GitHub</a> and
+        <a href="https://www.netlify.com/" target="_blank">hosted on Netlify</a>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
